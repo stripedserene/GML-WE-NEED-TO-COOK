@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"OBJ_Pot",
+  "%Name":"OBJ_Get_Red",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"OBJ_Pot",
+  "name":"OBJ_Get_Red",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SPR_Pot",
-    "path":"sprites/SPR_Pot/SPR_Pot.yy",
+    "name":"SPR_Get_Red",
+    "path":"sprites/SPR_Get_Red/SPR_Get_Red.yy",
   },
   "spriteMaskId":null,
   "visible":true,

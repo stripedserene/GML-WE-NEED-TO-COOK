@@ -2,4 +2,12 @@
 // You can write your code in this editor
 xspeed = 0
 yspeed = 0
-MoveSpeed = 1
+MoveSpeed = 2
+
+None = "None"
+RED = "RED"
+BLUE = "BLUE"
+YELLOW = "YELLOW"
+PURPLE = "PURPLE"
+
+carrying = None
