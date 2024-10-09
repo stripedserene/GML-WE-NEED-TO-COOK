@@ -69,4 +69,9 @@ if cookingTimer <= 0 {
 			Holding = [OBJ_Player.GREEN]
 		}
 	}
+	if array_length(Holding) == 3 {
+		if array_contains(Holding, OBJ_Player.PURPLE) and array_contains(Holding, OBJ_Player.GREEN) and array_contains(Holding, OBJ_Player.ORANGE) {
+			Holding = [OBJ_Player.HEISENBURGER]
+		}
+	}
 }
