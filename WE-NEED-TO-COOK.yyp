@@ -36,6 +36,7 @@
   "resources":[
     {"id":{"name":"OBJ_Controls_Text_1","path":"objects/OBJ_Controls_Text_1/OBJ_Controls_Text_1.yy",},},
     {"id":{"name":"OBJ_Controls_Text","path":"objects/OBJ_Controls_Text/OBJ_Controls_Text.yy",},},
+    {"id":{"name":"OBJ_Cook_Time","path":"objects/OBJ_Cook_Time/OBJ_Cook_Time.yy",},},
     {"id":{"name":"OBJ_Get_Blue","path":"objects/OBJ_Get_Blue/OBJ_Get_Blue.yy",},},
     {"id":{"name":"OBJ_Get_Red","path":"objects/OBJ_Get_Red/OBJ_Get_Red.yy",},},
     {"id":{"name":"OBJ_Get_Yellow","path":"objects/OBJ_Get_Yellow/OBJ_Get_Yellow.yy",},},
@@ -44,6 +45,8 @@
     {"id":{"name":"OBJ_Pot","path":"objects/OBJ_Pot/OBJ_Pot.yy",},},
     {"id":{"name":"OBJ_Trash_Can","path":"objects/OBJ_Trash_Can/OBJ_Trash_Can.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Background_Sprite","path":"sprites/Background_Sprite/Background_Sprite.yy",},},
+    {"id":{"name":"SPR_Cook_Timer","path":"sprites/SPR_Cook_Timer/SPR_Cook_Timer.yy",},},
     {"id":{"name":"SPR_Get_Blue","path":"sprites/SPR_Get_Blue/SPR_Get_Blue.yy",},},
     {"id":{"name":"SPR_Get_Red","path":"sprites/SPR_Get_Red/SPR_Get_Red.yy",},},
     {"id":{"name":"SPR_Get_Yellow","path":"sprites/SPR_Get_Yellow/SPR_Get_Yellow.yy",},},

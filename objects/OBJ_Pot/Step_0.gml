@@ -24,6 +24,10 @@ if place_meeting(x, y, OBJ_Player) and OBJ_Player.carrying == OBJ_Player.None an
 	OBJ_Controls_Text.Item = array_last(Holding)
 	if keyboard_check_pressed(ord("E")) {
 		OBJ_Player.carrying = array_pop(Holding)
+		burning = false 
+		burnTimer = 500
+		burnTimerDisplay = 5
+		burnTimerDisplayTimer = 100
 	}
 }
 
@@ -46,6 +50,9 @@ if place_meeting(x, y, OBJ_Player) and cooking == true {
 if cooking == true {
 	cookingTimer -= 1
 	cookingTimerDisplayTimer -= 1
+	instance_create_layer(x, y - 10, "FLOOR", OBJ_Cook_Time)
+	OBJ_Cook_Time.timer = cookingTimer
+	OBJ_Cook_Time.initialtime = 1000
 }
 
 if cookingTimerDisplayTimer <= 0 {
@@ -74,4 +81,22 @@ if cookingTimer <= 0 {
 			Holding = [OBJ_Player.HEISENBURGER]
 		}
 	}
+	
+	
+	burning = true
+}
+
+
+if burning == true {
+	burnTimer -= 1
+	burnTimerDisplayTimer -= 1
+}
+
+if burnTimerDisplayTimer <= 0 {
+	burnTimerDisplay -= 1
+	burnTimerDisplayTimer = 100
+}
+
+if burnTimer <= 0 {
+	Holding = [OBJ_Player.RUINED_PRODUCT]
 }

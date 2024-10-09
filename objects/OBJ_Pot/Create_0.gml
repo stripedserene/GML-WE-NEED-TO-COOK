@@ -6,3 +6,8 @@ cooking = false
 cookingTimer = 1000
 cookingTimerDisplayTimer = 100
 cookingTimerDisplay = 10
+
+burning = false 
+burnTimer = 500
+burnTimerDisplay = 5
+burnTimerDisplayTimer = 100
