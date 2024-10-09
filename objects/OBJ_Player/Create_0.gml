@@ -9,5 +9,7 @@ RED = "RED"
 BLUE = "BLUE"
 YELLOW = "YELLOW"
 PURPLE = "PURPLE"
+ORANGE = "ORANGE"
+GREEN = "GREEN"
 
 carrying = None

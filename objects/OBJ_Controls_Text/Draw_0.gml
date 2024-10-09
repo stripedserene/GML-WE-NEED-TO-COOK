@@ -23,6 +23,9 @@ if DrawText == "Throw Away" {
 if DrawText == "Hands Full" {
 	draw_text_transformed(x, y, "You're already carrying " + Item, 0.5, 0.5, 0)
 }
+if DrawText == "Cooking" {
+	draw_text_transformed(x, y, "The " + Appliance + " is currently cooking", 0.5, 0.5, 0)
+}
 
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
