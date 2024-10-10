@@ -17,7 +17,7 @@ if place_meeting(x, y, OBJ_Player) and OBJ_Player.carrying == OBJ_Player.None an
 	OBJ_Controls_Text.Appliance = "Pot"
 }
 
-if place_meeting(x, y, OBJ_Player) and OBJ_Player.carrying == OBJ_Player.None and array_length(Holding) != 0 and cooking == false {
+if place_meeting(x, y, OBJ_Player) and OBJ_Player.carrying == OBJ_Player.None and array_length(Holding) != 0 and cooking == false and burning == false {
 	instance_create_layer(x, y - 20, "TEXT_DISPLAY_LAYER", OBJ_Controls_Text)
 	OBJ_Controls_Text.DrawText = "Grab"
 	OBJ_Controls_Text.ControlButton = "E"
@@ -31,7 +31,7 @@ if place_meeting(x, y, OBJ_Player) and OBJ_Player.carrying == OBJ_Player.None an
 	}
 }
 
-if place_meeting(x, y, OBJ_Player) and array_length(Holding) != 0 and OBJ_Player.carrying == OBJ_Player.None and cooking == false {
+if place_meeting(x, y, OBJ_Player) and array_length(Holding) != 0 and OBJ_Player.carrying == OBJ_Player.None and cooking == false and burning == false {
 	instance_create_layer(x, y + 20, "TEXT_DISPLAY_LAYER", OBJ_Controls_Text_1)
 	OBJ_Controls_Text_1.DrawText = "Cook"
 	OBJ_Controls_Text_1.ControlButton = "F"
@@ -65,6 +65,9 @@ if cookingTimer <= 0 {
 	cookingTimer = 1000
 	cookingTimerDisplayTimer = 100
 	cookingTimerDisplay = 10
+	if array_contains(Holding, OBJ_Player.RUINED_PRODUCT) {
+		Holding = [OBJ_Player.RUINED_PRODUCT]
+	}
 	if array_length(Holding) == 2 {
 		if array_contains(Holding, OBJ_Player.RED) and array_contains(Holding, OBJ_Player.BLUE) {
 			Holding = [OBJ_Player.PURPLE]
@@ -86,6 +89,19 @@ if cookingTimer <= 0 {
 	burning = true
 }
 
+if place_meeting(x, y, OBJ_Player) and array_length(Holding) != 0 and cooking == false and burning == true{
+	instance_create_layer(x, y - 20, "TEXT_DISPLAY_LAYER", OBJ_Controls_Text)
+	OBJ_Controls_Text.DrawText = "Turn Off"
+	OBJ_Controls_Text.ControlButton = "F"
+	OBJ_Controls_Text.Appliance = "Pot"
+	if keyboard_check_pressed(ord("F")){
+		burning = false 
+		burnTimer = 500
+		burnTimerDisplay = 5
+		burnTimerDisplayTimer = 100
+	}
+}
+
 
 if burning == true {
 	burnTimer -= 1
@@ -99,4 +115,8 @@ if burnTimerDisplayTimer <= 0 {
 
 if burnTimer <= 0 {
 	Holding = [OBJ_Player.RUINED_PRODUCT]
+	burning = false 
+	burnTimer = 500
+	burnTimerDisplay = 5
+	burnTimerDisplayTimer = 100
 }
