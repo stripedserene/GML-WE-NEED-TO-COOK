@@ -43,6 +43,8 @@
     {"id":{"name":"OBJ_Pot_Text","path":"objects/OBJ_Pot_Text/OBJ_Pot_Text.yy",},},
     {"id":{"name":"OBJ_Pot","path":"objects/OBJ_Pot/OBJ_Pot.yy",},},
     {"id":{"name":"OBJ_Trash_Can","path":"objects/OBJ_Trash_Can/OBJ_Trash_Can.yy",},},
+    {"id":{"name":"Object10_1","path":"objects/Object10_1/Object10_1.yy",},},
+    {"id":{"name":"Object10_2","path":"objects/Object10_2/Object10_2.yy",},},
     {"id":{"name":"Object10","path":"objects/Object10/Object10.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Background_Sprite","path":"sprites/Background_Sprite/Background_Sprite.yy",},},

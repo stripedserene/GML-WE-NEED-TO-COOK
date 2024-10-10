@@ -120,6 +120,14 @@ if burnTimer <= 0 {
 	burnTimerDisplayTimer = 100
 }
 
-//if Holding[0] == OBJ_Player.RED {
-//	instance_create_layer(x, y, "Instances", Object10)
-//}
+for (var i = 0; i < (array_length(Holding) );i++) {
+	if Holding[i] == OBJ_Player.RED {
+		instance_create_layer(x, y - i, "Instances", Object10)
+	}
+	if Holding[i] == OBJ_Player.YELLOW {
+		instance_create_layer(x, y - i, "Instances", Object10_1)
+	}
+	if Holding[i] == OBJ_Player.BLUE {
+		instance_create_layer(x, y - i, "Instances", Object10_2)
+	}
+}
