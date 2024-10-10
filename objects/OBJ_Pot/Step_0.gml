@@ -128,6 +128,6 @@ for (var i = 0; i < (array_length(Holding)); i++) {
 		instance_create_layer(x, y - i, "Instances", OBJ_Display_Yellow)
 	}
 	if Holding[i] == OBJ_Player.BLUE {
-		instance_create_layer(x, y - i, "Instances", Object10_2)
+		instance_create_layer(x, y - i, "Instances", OBJ_Display_Blue)
 	}
 }
