@@ -32,10 +32,10 @@ if place_meeting(x, y, OBJ_Player) and OBJ_Player.carrying == OBJ_Player.None an
 }
 
 if place_meeting(x, y, OBJ_Player) and array_length(Holding) != 0 and OBJ_Player.carrying == OBJ_Player.None and cooking == false and burning == false {
-	instance_create_layer(x, y + 20, "TEXT_DISPLAY_LAYER", OBJ_Controls_Text_1)
-	OBJ_Controls_Text_1.DrawText = "Cook"
-	OBJ_Controls_Text_1.ControlButton = "F"
-	OBJ_Controls_Text_1.Appliance = "Pot"
+	instance_create_layer(x, y + 20, "TEXT_DISPLAY_LAYER", OBJ_Controls_Text_2)
+	OBJ_Controls_Text_2.DrawText = "Cook"
+	OBJ_Controls_Text_2.ControlButton = "F"
+	OBJ_Controls_Text_2.Appliance = "Pot"
 	if keyboard_check_pressed(ord("F")){
 		cooking = true
 	}
@@ -129,5 +129,17 @@ for (var i = 0; i < (array_length(Holding)); i++) {
 	}
 	if Holding[i] == OBJ_Player.BLUE {
 		instance_create_layer(x, y - i, "Instances", OBJ_Display_Blue)
+	}
+	if Holding[i] == OBJ_Player.PURPLE {
+		instance_create_layer(x, y - i, "Instances", OBJ_Display_Purple)
+	}
+	if Holding[i] == OBJ_Player.GREEN {
+		instance_create_layer(x, y - i, "Instances", OBJ_Display_Green)
+	}
+	if Holding[i] == OBJ_Player.ORANGE {
+		instance_create_layer(x, y - i, "Instances", OBJ_Display_Orange)
+	}
+	if Holding[i] == OBJ_Player.HEISENBURGER {
+		instance_create_layer(x, y - i, "Instances", OBJ_Display_HEISENBURGER)
 	}
 }

@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"OBJ_Controls_Text_1",
+  "%Name":"OBJ_Display_Orange",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"OBJ_Controls_Text_1",
+  "name":"OBJ_Display_Orange",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"SPR_Pot_Orange",
+    "path":"sprites/SPR_Pot_Orange/SPR_Pot_Orange.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
