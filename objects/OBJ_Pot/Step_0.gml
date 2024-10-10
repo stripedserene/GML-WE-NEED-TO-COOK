@@ -50,9 +50,7 @@ if place_meeting(x, y, OBJ_Player) and cooking == true {
 if cooking == true {
 	cookingTimer -= 1
 	cookingTimerDisplayTimer -= 1
-	instance_create_layer(x, y - 10, "FLOOR", OBJ_Cook_Time)
-	OBJ_Cook_Time.timer = cookingTimer
-	OBJ_Cook_Time.initialtime = 1000
+	instance_create_layer(x, y - 10, "FLOOR", OBJ_Pot_Text, {display: cookingTimerDisplay, TextColor: c_yellow})
 }
 
 if cookingTimerDisplayTimer <= 0 {
@@ -106,6 +104,7 @@ if place_meeting(x, y, OBJ_Player) and array_length(Holding) != 0 and cooking ==
 if burning == true {
 	burnTimer -= 1
 	burnTimerDisplayTimer -= 1
+	instance_create_layer(x, y - 10, "FLOOR", OBJ_Pot_Text, {display: burnTimerDisplay, TextColor: c_red})
 }
 
 if burnTimerDisplayTimer <= 0 {
@@ -120,3 +119,7 @@ if burnTimer <= 0 {
 	burnTimerDisplay = 5
 	burnTimerDisplayTimer = 100
 }
+
+//if Holding[0] == OBJ_Player.RED {
+//	instance_create_layer(x, y, "Instances", Object10)
+//}

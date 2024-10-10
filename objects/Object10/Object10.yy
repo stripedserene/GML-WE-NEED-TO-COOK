@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"OBJ_Cook_Time",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Object10",
+  "eventList":[],
   "managed":true,
-  "name":"OBJ_Cook_Time",
+  "name":"Object10",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SPR_Cook_Timer",
-    "path":"sprites/SPR_Cook_Timer/SPR_Cook_Timer.yy",
+    "name":"SPR_Pot_Red",
+    "path":"sprites/SPR_Pot_Red/SPR_Pot_Red.yy",
   },
   "spriteMaskId":null,
   "visible":true,
