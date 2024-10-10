@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if place_meeting(x, y, OBJ_Player) and OBJ_Player.carrying != OBJ_Player.None and cooking == false and array_length(Holding) < 6{
+if place_meeting(x, y, OBJ_Player) and OBJ_Player.carrying != OBJ_Player.None and cooking == false and array_length(Holding) < 6 and array_contains(Holding, OBJ_Player.carrying) == false{
 	instance_create_layer(x, y - 20, "TEXT_DISPLAY_LAYER", OBJ_Controls_Text)
 	OBJ_Controls_Text.DrawText = "Place"
 	OBJ_Controls_Text.ControlButton = "R"
@@ -10,6 +10,12 @@ if place_meeting(x, y, OBJ_Player) and OBJ_Player.carrying != OBJ_Player.None an
 		array_push(Holding, OBJ_Player.carrying)
 		OBJ_Player.carrying = OBJ_Player.None
 	}
+}
+if place_meeting(x, y, OBJ_Player) and OBJ_Player.carrying != OBJ_Player.None and cooking == false and array_length(Holding) < 6 and array_contains(Holding, OBJ_Player.carrying) == true{
+	instance_create_layer(x, y - 20, "TEXT_DISPLAY_LAYER", OBJ_Controls_Text)
+	OBJ_Controls_Text.DrawText = "Already Has"
+	OBJ_Controls_Text.Item = OBJ_Player.carrying
+	OBJ_Controls_Text.Appliance = "Pot"
 }
 
 if place_meeting(x, y, OBJ_Player) and OBJ_Player.carrying != OBJ_Player.None and cooking == false and array_length(Holding) > 5{
@@ -39,7 +45,7 @@ if place_meeting(x, y, OBJ_Player) and OBJ_Player.carrying == OBJ_Player.None an
 	}
 }
 
-if place_meeting(x, y, OBJ_Player) and array_length(Holding) != 0 and cooking == false and burning == false {
+if place_meeting(x, y, OBJ_Player) and array_length(Holding) != 0 and cooking == false and burning == false and array_length(Holding) > 1 {
 	instance_create_layer(x, y + 20, "TEXT_DISPLAY_LAYER", OBJ_Controls_Text_2)
 	OBJ_Controls_Text_2.DrawText = "Cook"
 	OBJ_Controls_Text_2.ControlButton = "F"
@@ -78,16 +84,25 @@ if cookingTimer <= 0 {
 		if array_contains(Holding, OBJ_Player.RED) and array_contains(Holding, OBJ_Player.BLUE) {
 			Holding = [OBJ_Player.PURPLE]
 		}
-		if array_contains(Holding, OBJ_Player.RED) and array_contains(Holding, OBJ_Player.YELLOW) {
+		else if array_contains(Holding, OBJ_Player.RED) and array_contains(Holding, OBJ_Player.YELLOW) {
 			Holding = [OBJ_Player.ORANGE]
 		}
-		if array_contains(Holding, OBJ_Player.BLUE) and array_contains(Holding, OBJ_Player.YELLOW) {
+		else if array_contains(Holding, OBJ_Player.BLUE) and array_contains(Holding, OBJ_Player.YELLOW) {
 			Holding = [OBJ_Player.GREEN]
+		}
+		else {
+			Holding = [OBJ_Player.MYSTERY_PRODUCT]
 		}
 	}
 	if array_length(Holding) == 3 {
 		if array_contains(Holding, OBJ_Player.PURPLE) and array_contains(Holding, OBJ_Player.GREEN) and array_contains(Holding, OBJ_Player.ORANGE) {
 			Holding = [OBJ_Player.HEISENBURGER]
+		}
+		else if array_contains(Holding, OBJ_Player.BLUE) and array_contains(Holding, OBJ_Player.RED) and array_contains(Holding, OBJ_Player.YELLOW) {
+			Holding = [OBJ_Player.Synthestine]
+		}
+		else {
+			Holding = [OBJ_Player.MYSTERY_PRODUCT]
 		}
 	}
 	
@@ -147,7 +162,16 @@ for (var i = 0; i < (array_length(Holding)); i++) {
 	if Holding[i] == OBJ_Player.ORANGE {
 		instance_create_layer(x, y - i, "Instances", OBJ_Display_Orange)
 	}
+	if Holding[i] == OBJ_Player.Synthestine {
+		instance_create_layer(x, y - i, "Instances", OBJ_Display_Synthestine)
+	}
 	if Holding[i] == OBJ_Player.HEISENBURGER {
 		instance_create_layer(x, y - i, "Instances", OBJ_Display_HEISENBURGER)
+	}
+	if Holding[i] == OBJ_Player.RUINED_PRODUCT {
+		instance_create_layer(x, y - i, "Instances", OBJ_Display_Ruined_Product)
+	}
+	if Holding[i] == OBJ_Player.MYSTERY_PRODUCT {
+		instance_create_layer(x, y - i, "Instances", OBJ_Display_Mystery_Product)
 	}
 }

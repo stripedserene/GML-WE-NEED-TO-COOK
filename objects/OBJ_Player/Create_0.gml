@@ -5,14 +5,16 @@ yspeed = 0
 MoveSpeed = 2
 
 None = "None"
-RED = "RED"
-BLUE = "BLUE"
-YELLOW = "YELLOW"
-PURPLE = "PURPLE"
-ORANGE = "ORANGE"
-GREEN = "GREEN"
-HEISENBURGER = "HEISENBURGER"
+RED = "Redonitrate"
+BLUE = "Bluetramine"
+YELLOW = "Yellowphosphate"
+PURPLE = "Purplenic acid"
+ORANGE = "Orangetide"
+GREEN = "Greenolium"
+HEISENBURGER = "THE HEISENBURGER"
+Synthestine = "Synthestine"
 
 RUINED_PRODUCT = "Ruined Product"
+MYSTERY_PRODUCT = "Mystery Product"
 
 carrying = None

@@ -15,7 +15,9 @@ if DrawText == "Cook" {
 if DrawText == "Place" {
 	draw_text_transformed(x, y, "Press " + ControlButton + " to place " + Item + " in the " + Appliance, 0.5, 0.5, 0)
 }
-
+if DrawText == "Already Has" {
+	draw_text_transformed(x, y, "The " + Appliance + " already has " + Item, 0.5, 0.5, 0)
+}
 if DrawText == "Empty" {
 	draw_text_transformed(x, y, "The " + Appliance + " is empty", 0.5, 0.5, 0)
 }
