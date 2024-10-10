@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"Object10_1",
+  "%Name":"OBJ_Display_Yellow",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Object10_1",
+  "name":"OBJ_Display_Yellow",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",

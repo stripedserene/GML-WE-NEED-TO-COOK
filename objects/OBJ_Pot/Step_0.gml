@@ -120,12 +120,12 @@ if burnTimer <= 0 {
 	burnTimerDisplayTimer = 100
 }
 
-for (var i = 0; i < (array_length(Holding) );i++) {
+for (var i = 0; i < (array_length(Holding)); i++) {
 	if Holding[i] == OBJ_Player.RED {
-		instance_create_layer(x, y - i, "Instances", Object10)
+		instance_create_layer(x, y - i, "Instances", OBJ_Display_Red)
 	}
 	if Holding[i] == OBJ_Player.YELLOW {
-		instance_create_layer(x, y - i, "Instances", Object10_1)
+		instance_create_layer(x, y - i, "Instances", OBJ_Display_Yellow)
 	}
 	if Holding[i] == OBJ_Player.BLUE {
 		instance_create_layer(x, y - i, "Instances", Object10_2)
