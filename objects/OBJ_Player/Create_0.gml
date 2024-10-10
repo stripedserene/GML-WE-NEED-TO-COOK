@@ -13,6 +13,15 @@ ORANGE = "Orangetide"
 GREEN = "Greenolium"
 HEISENBURGER = "THE HEISENBURGER"
 Synthestine = "Synthestine"
+Zyloxine = "Zyloxine"
+Frothium = "Frothium"
+CeleritePhosphate = "Celerite Phosphate"
+Barotine = "Barotine"
+//NOT IMPLEMENTED
+Luminexate = "Luminexate"
+Synaptizine = "Synaptizine"
+Quasarine = "Quasarine"
+
 
 RUINED_PRODUCT = "Ruined Product"
 MYSTERY_PRODUCT = "Mystery Product"
