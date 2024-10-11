@@ -14,12 +14,14 @@ PURPLE = "Purplenic acid"
 ORANGE = "Orangetide"
 GREEN = "Greenolium"
 
-HEISENBURGER = "THE HEISENBURGER"
+HEISENBURGER = "THE HAMBURGER"
 BlueCandy = "Blue Candy"
 ChiliP = "Chili P"
 BlueSkySoda = "Blue Sky Soda"
 VeggieBacon = "Veggie Bacon"
-ColeSaulSalad = "Better Cole-Saul Salad" 
+ColeSaulSalad = "Coleslaw" 
+Burrito = "Burrito"
+Taco = "Taco"
 
 Synthestine = "Synthestine"
 

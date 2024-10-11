@@ -134,6 +134,12 @@ if cookingTimer <= 0 {
 		if array_contains(Holding, OBJ_Player.PURPLE) and array_contains(Holding, OBJ_Player.GREEN) and array_contains(Holding, OBJ_Player.ORANGE) {
 			Holding = [OBJ_Player.HEISENBURGER]
 		}
+		else if array_contains(Holding, OBJ_Player.Barotine) and array_contains(Holding, OBJ_Player.Quasarine) and array_contains(Holding, OBJ_Player.GREEN) {
+			Holding = [OBJ_Player.Burrito]
+		}
+		else if array_contains(Holding, OBJ_Player.ORANGE) and array_contains(Holding, OBJ_Player.Luminexate) and array_contains(Holding, OBJ_Player.TempestiumSulfide) {
+			Holding = [OBJ_Player.Taco]
+		}
 		else if array_contains(Holding, OBJ_Player.BLUE) and array_contains(Holding, OBJ_Player.RED) and array_contains(Holding, OBJ_Player.YELLOW) {
 			Holding = [OBJ_Player.Synthestine]
 		}
@@ -251,6 +257,12 @@ for (var i = 0; i < (array_length(Holding)); i++) {
 	}
 	if Holding[i] == OBJ_Player.ColeSaulSalad {
 		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Better_Cole_Slaw)
+	}
+	if Holding[i] == OBJ_Player.Burrito {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Burrito)
+	}
+	if Holding[i] == OBJ_Player.Taco {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Taco)
 	}
 	if Holding[i] == OBJ_Player.RUINED_PRODUCT {
 		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Ruined_Product)
