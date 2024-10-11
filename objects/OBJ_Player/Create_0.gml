@@ -3,6 +3,8 @@
 xspeed = 0
 yspeed = 0
 MoveSpeed = 2
+Stunned = false 
+StunnedTimer = 200
 
 None = "None"
 
@@ -22,6 +24,7 @@ VeggieBacon = "Veggie Bacon"
 ColeSaulSalad = "Coleslaw" 
 Burrito = "Burrito"
 Taco = "Taco"
+HotDog = "Hot Dog"
 
 Synthestine = "Synthestine"
 
