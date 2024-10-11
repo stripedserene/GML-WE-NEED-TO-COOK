@@ -123,6 +123,9 @@ if cookingTimer <= 0 {
 		else if array_contains(Holding, OBJ_Player.Poxinide) and array_contains(Holding, OBJ_Player.Frothium) {
 			Holding = [OBJ_Player.VeggieBacon]
 		}
+		else if array_contains(Holding, OBJ_Player.Barotine) and array_contains(Holding, OBJ_Player.CeleritePhosphate) {
+			Holding = [OBJ_Player.ColeSaulSalad]
+		}
 		else {
 			Holding = [OBJ_Player.MYSTERY_PRODUCT]
 		}
@@ -245,6 +248,9 @@ for (var i = 0; i < (array_length(Holding)); i++) {
 	}
 	if Holding[i] == OBJ_Player.VeggieBacon {
 		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Veggie_Bacon)
+	}
+	if Holding[i] == OBJ_Player.ColeSaulSalad {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Better_Cole_Slaw)
 	}
 	if Holding[i] == OBJ_Player.RUINED_PRODUCT {
 		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Ruined_Product)

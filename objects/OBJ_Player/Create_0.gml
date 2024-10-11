@@ -19,7 +19,7 @@ BlueCandy = "Blue Candy"
 ChiliP = "Chili P"
 BlueSkySoda = "Blue Sky Soda"
 VeggieBacon = "Veggie Bacon"
-ColeSaulSalad = "Cole-Saul Salad" // NOT IMPLEMENTED YET
+ColeSaulSalad = "Better Cole-Saul Salad" 
 
 Synthestine = "Synthestine"
 
