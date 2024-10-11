@@ -117,6 +117,9 @@ if cookingTimer <= 0 {
 		else if array_contains(Holding, OBJ_Player.YELLOW) and array_contains(Holding, OBJ_Player.ORANGE) {
 			Holding = [OBJ_Player.TempestiumSulfide]
 		}
+		else if array_contains(Holding, OBJ_Player.TempestiumSulfide) and array_contains(Holding, OBJ_Player.Quasarine) {
+			Holding = [OBJ_Player.BlueSkySoda]
+		}
 		else {
 			Holding = [OBJ_Player.MYSTERY_PRODUCT]
 		}
@@ -233,6 +236,9 @@ for (var i = 0; i < (array_length(Holding)); i++) {
 	}
 	if Holding[i] == OBJ_Player.ChiliP {
 		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Chili_P)
+	}
+	if Holding[i] == OBJ_Player.BlueSkySoda {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Blue_Sky_Soda)
 	}
 	if Holding[i] == OBJ_Player.RUINED_PRODUCT {
 		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Ruined_Product)

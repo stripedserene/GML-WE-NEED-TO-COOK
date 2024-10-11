@@ -17,6 +17,8 @@ GREEN = "Greenolium"
 HEISENBURGER = "THE HEISENBURGER"
 BlueCandy = "Blue Candy"
 ChiliP = "Chili P"
+BlueSkySoda = "Blue Sky Soda"
+
 Synthestine = "Synthestine"
 
 Zyloxine = "Zyloxine"
