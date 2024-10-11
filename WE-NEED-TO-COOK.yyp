@@ -66,10 +66,12 @@
     {"id":{"name":"OBJ_Player","path":"objects/OBJ_Player/OBJ_Player.yy",},},
     {"id":{"name":"OBJ_Pot_Text","path":"objects/OBJ_Pot_Text/OBJ_Pot_Text.yy",},},
     {"id":{"name":"OBJ_Pot","path":"objects/OBJ_Pot/OBJ_Pot.yy",},},
+    {"id":{"name":"OBJ_Recipe_Book","path":"objects/OBJ_Recipe_Book/OBJ_Recipe_Book.yy",},},
     {"id":{"name":"OBJ_Tank_Blue","path":"objects/OBJ_Tank_Blue/OBJ_Tank_Blue.yy",},},
     {"id":{"name":"OBJ_Tank_Red","path":"objects/OBJ_Tank_Red/OBJ_Tank_Red.yy",},},
     {"id":{"name":"OBJ_Tank_Yellow","path":"objects/OBJ_Tank_Yellow/OBJ_Tank_Yellow.yy",},},
     {"id":{"name":"OBJ_Trash_Can","path":"objects/OBJ_Trash_Can/OBJ_Trash_Can.yy",},},
+    {"id":{"name":"Recipes","path":"rooms/Recipes/Recipes.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Background_Sprite","path":"sprites/Background_Sprite/Background_Sprite.yy",},},
     {"id":{"name":"SPR_Get_Blue","path":"sprites/SPR_Get_Blue/SPR_Get_Blue.yy",},},
@@ -101,6 +103,7 @@
     {"id":{"name":"SPR_Pot_Yellow","path":"sprites/SPR_Pot_Yellow/SPR_Pot_Yellow.yy",},},
     {"id":{"name":"SPR_Pot_Zyloxine","path":"sprites/SPR_Pot_Zyloxine/SPR_Pot_Zyloxine.yy",},},
     {"id":{"name":"SPR_Pot","path":"sprites/SPR_Pot/SPR_Pot.yy",},},
+    {"id":{"name":"SPR_Recipe_Book","path":"sprites/SPR_Recipe_Book/SPR_Recipe_Book.yy",},},
     {"id":{"name":"SPR_Tank_Blue","path":"sprites/SPR_Tank_Blue/SPR_Tank_Blue.yy",},},
     {"id":{"name":"SPR_Tank_Red","path":"sprites/SPR_Tank_Red/SPR_Tank_Red.yy",},},
     {"id":{"name":"SPR_Tank_Yellow","path":"sprites/SPR_Tank_Yellow/SPR_Tank_Yellow.yy",},},
@@ -110,6 +113,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Recipes","path":"rooms/Recipes/Recipes.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
