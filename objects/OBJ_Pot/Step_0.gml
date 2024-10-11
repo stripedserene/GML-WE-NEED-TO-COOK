@@ -102,6 +102,21 @@ if cookingTimer <= 0 {
 		else if array_contains(Holding, OBJ_Player.RED) and array_contains(Holding, OBJ_Player.PURPLE) {
 			Holding = [OBJ_Player.Barotine]
 		}
+		else if array_contains(Holding, OBJ_Player.BLUE) and array_contains(Holding, OBJ_Player.PURPLE) {
+			Holding = [OBJ_Player.Luminexate]
+		}
+		else if array_contains(Holding, OBJ_Player.YELLOW) and array_contains(Holding, OBJ_Player.PURPLE) {
+			Holding = [OBJ_Player.Quasarine]
+		}
+		else if array_contains(Holding, OBJ_Player.RED) and array_contains(Holding, OBJ_Player.ORANGE) {
+			Holding = [OBJ_Player.Poxinide]
+		}
+		else if array_contains(Holding, OBJ_Player.BLUE) and array_contains(Holding, OBJ_Player.ORANGE) {
+			Holding = [OBJ_Player.Xylochloride]
+		}
+		else if array_contains(Holding, OBJ_Player.YELLOW) and array_contains(Holding, OBJ_Player.ORANGE) {
+			Holding = [OBJ_Player.TempestiumSulfide]
+		}
 		else {
 			Holding = [OBJ_Player.MYSTERY_PRODUCT]
 		}
@@ -112,6 +127,12 @@ if cookingTimer <= 0 {
 		}
 		else if array_contains(Holding, OBJ_Player.BLUE) and array_contains(Holding, OBJ_Player.RED) and array_contains(Holding, OBJ_Player.YELLOW) {
 			Holding = [OBJ_Player.Synthestine]
+		}
+		else if array_contains(Holding, OBJ_Player.BLUE) and array_contains(Holding, OBJ_Player.Synthestine) and array_contains(Holding, OBJ_Player.Xylochloride) {
+			Holding = [OBJ_Player.BlueCandy]
+		}
+		else if array_contains(Holding, OBJ_Player.RED) and array_contains(Holding, OBJ_Player.Zyloxine) and array_contains(Holding, OBJ_Player.Luminexate) {
+			Holding = [OBJ_Player.ChiliP]
 		}
 		else {
 			Holding = [OBJ_Player.MYSTERY_PRODUCT]
@@ -157,45 +178,66 @@ if burnTimer <= 0 {
 
 for (var i = 0; i < (array_length(Holding)); i++) {
 	if Holding[i] == OBJ_Player.RED {
-		instance_create_layer(x, y - i, "Instances", OBJ_Display_Red)
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Red)
 	}
 	if Holding[i] == OBJ_Player.YELLOW {
-		instance_create_layer(x, y - i, "Instances", OBJ_Display_Yellow)
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Yellow)
 	}
 	if Holding[i] == OBJ_Player.BLUE {
-		instance_create_layer(x, y - i, "Instances", OBJ_Display_Blue)
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Blue)
 	}
 	if Holding[i] == OBJ_Player.PURPLE {
-		instance_create_layer(x, y - i, "Instances", OBJ_Display_Purple)
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Purple)
 	}
 	if Holding[i] == OBJ_Player.GREEN {
-		instance_create_layer(x, y - i, "Instances", OBJ_Display_Green)
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Green)
 	}
 	if Holding[i] == OBJ_Player.ORANGE {
-		instance_create_layer(x, y - i, "Instances", OBJ_Display_Orange)
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Orange)
 	}
 	if Holding[i] == OBJ_Player.Synthestine {
-		instance_create_layer(x, y - i, "Instances", OBJ_Display_Synthestine)
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Synthestine)
 	}
 	if Holding[i] == OBJ_Player.Zyloxine {
-		instance_create_layer(x, y - i, "Instances", OBJ_Display_Zyloxine)
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Zyloxine)
 	}
 	if Holding[i] == OBJ_Player.Frothium {
-		instance_create_layer(x, y - i, "Instances", OBJ_Display_Frothium)
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Frothium)
 	}
 	if Holding[i] == OBJ_Player.CeleritePhosphate {
-		instance_create_layer(x, y - i, "Instances", OBJ_Display_CeleritePhosphate)
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_CeleritePhosphate)
 	}
 	if Holding[i] == OBJ_Player.Barotine {
-		instance_create_layer(x, y - i, "Instances", OBJ_Display_Barotine)
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Barotine)
+	}
+	if Holding[i] == OBJ_Player.Luminexate {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Luminexate)
+	}
+	if Holding[i] == OBJ_Player.Quasarine {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Quasarine)
+	}
+	if Holding[i] == OBJ_Player.Poxinide {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Poxinide)
+	}
+	if Holding[i] == OBJ_Player.Xylochloride {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Xylochloride)
+	}
+	if Holding[i] == OBJ_Player.TempestiumSulfide {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Tempestium_Sulfide)
 	}
 	if Holding[i] == OBJ_Player.HEISENBURGER {
-		instance_create_layer(x, y - i, "Instances", OBJ_Display_HEISENBURGER)
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_HEISENBURGER)
+	}
+	if Holding[i] == OBJ_Player.BlueCandy {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Blue_Candy)
+	}
+	if Holding[i] == OBJ_Player.ChiliP {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Chili_P)
 	}
 	if Holding[i] == OBJ_Player.RUINED_PRODUCT {
-		instance_create_layer(x, y - i, "Instances", OBJ_Display_Ruined_Product)
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Ruined_Product)
 	}
 	if Holding[i] == OBJ_Player.MYSTERY_PRODUCT {
-		instance_create_layer(x, y - i, "Instances", OBJ_Display_Mystery_Product)
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Mystery_Product)
 	}
 }

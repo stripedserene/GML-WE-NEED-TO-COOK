@@ -5,22 +5,33 @@ yspeed = 0
 MoveSpeed = 2
 
 None = "None"
+
 RED = "Redonitrate"
 BLUE = "Bluetramine"
 YELLOW = "Yellowphosphate"
+
 PURPLE = "Purplenic acid"
 ORANGE = "Orangetide"
 GREEN = "Greenolium"
+
 HEISENBURGER = "THE HEISENBURGER"
+BlueCandy = "Blue Candy"
+ChiliP = "Chili P"
 Synthestine = "Synthestine"
+
 Zyloxine = "Zyloxine"
 Frothium = "Frothium"
 CeleritePhosphate = "Celerite Phosphate"
+
 Barotine = "Barotine"
-//NOT IMPLEMENTED
 Luminexate = "Luminexate"
-Synaptizine = "Synaptizine"
 Quasarine = "Quasarine"
+
+Poxinide = "Poxinide"
+Xylochloride = "Xylochloride"
+TempestiumSulfide = "Tempestium Sulfide"
+
+//NOT IMPLEMENTED
 
 
 RUINED_PRODUCT = "Ruined Product"
