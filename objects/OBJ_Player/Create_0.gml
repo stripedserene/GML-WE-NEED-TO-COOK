@@ -18,6 +18,8 @@ HEISENBURGER = "THE HEISENBURGER"
 BlueCandy = "Blue Candy"
 ChiliP = "Chili P"
 BlueSkySoda = "Blue Sky Soda"
+VeggieBacon = "Veggie Bacon"
+ColeSaulSalad = "Cole-Saul Salad" // NOT IMPLEMENTED YET
 
 Synthestine = "Synthestine"
 
