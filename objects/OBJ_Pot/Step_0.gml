@@ -149,6 +149,9 @@ if cookingTimer <= 0 {
 		else if array_contains(Holding, OBJ_Player.BLUE) and array_contains(Holding, OBJ_Player.Synthestine) and array_contains(Holding, OBJ_Player.Xylochloride) {
 			Holding = [OBJ_Player.BlueCandy]
 		}
+		else if array_contains(Holding, OBJ_Player.Synthestine) and array_contains(Holding, OBJ_Player.Zyloxine) and array_contains(Holding, OBJ_Player.Frothium) {
+			Holding = [OBJ_Player.Pizza]
+		}
 		else if array_contains(Holding, OBJ_Player.RED) and array_contains(Holding, OBJ_Player.Zyloxine) and array_contains(Holding, OBJ_Player.Luminexate) {
 			Holding = [OBJ_Player.ChiliP]
 		}
@@ -269,6 +272,9 @@ for (var i = 0; i < (array_length(Holding)); i++) {
 	}
 	if Holding[i] == OBJ_Player.HotDog {
 		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Hot_Dog)
+	}
+	if Holding[i] == OBJ_Player.Pizza {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Pizza)
 	}
 	if Holding[i] == OBJ_Player.RUINED_PRODUCT {
 		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Ruined_Product)

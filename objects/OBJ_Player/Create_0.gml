@@ -16,15 +16,23 @@ PURPLE = "Purplenic acid"
 ORANGE = "Orangetide"
 GREEN = "Greenolium"
 
-HEISENBURGER = "THE HAMBURGER"
-BlueCandy = "Blue Candy"
-ChiliP = "Chili P"
-BlueSkySoda = "Blue Sky Soda"
-VeggieBacon = "Veggie Bacon"
+HEISENBURGER = "Hamburger"
+BlueCandy = "Candy"
+ChiliP = "Chili"
+BlueSkySoda = "Blue Soda"
+VeggieBacon = "Bacon"
 ColeSaulSalad = "Coleslaw" 
 Burrito = "Burrito"
 Taco = "Taco"
 HotDog = "Hot Dog"
+Pizza = "Pizza"
+//TO DO
+Fries = "Fries"
+Cola = "Cola"
+OnionRings = "Onion Rings"
+SpecialSauce = "Special Sauce"
+
+
 
 Synthestine = "Synthestine"
 
@@ -39,8 +47,6 @@ Quasarine = "Quasarine"
 Poxinide = "Poxinide"
 Xylochloride = "Xylochloride"
 TempestiumSulfide = "Tempestium Sulfide"
-
-//NOT IMPLEMENTED
 
 
 RUINED_PRODUCT = "Ruined Product"
