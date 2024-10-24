@@ -120,11 +120,23 @@ if cookingTimer <= 0 {
 		else if array_contains(Holding, OBJ_Player.TempestiumSulfide) and array_contains(Holding, OBJ_Player.Quasarine) {
 			Holding = [OBJ_Player.BlueSkySoda]
 		}
+		else if array_contains(Holding, OBJ_Player.CeleritePhosphate) and array_contains(Holding, OBJ_Player.Luminexate) {
+			Holding = [OBJ_Player.Cola]
+		}
 		else if array_contains(Holding, OBJ_Player.Poxinide) and array_contains(Holding, OBJ_Player.Frothium) {
 			Holding = [OBJ_Player.VeggieBacon]
 		}
 		else if array_contains(Holding, OBJ_Player.Barotine) and array_contains(Holding, OBJ_Player.CeleritePhosphate) {
 			Holding = [OBJ_Player.ColeSaulSalad]
+		}
+		else if array_contains(Holding, OBJ_Player.RED) and array_contains(Holding, OBJ_Player.Poxinide) {
+			Holding = [OBJ_Player.Ketchup]
+		}
+		else if array_contains(Holding, OBJ_Player.YELLOW) and array_contains(Holding, OBJ_Player.Poxinide) {
+			Holding = [OBJ_Player.Mustard]
+		}
+		else if array_contains(Holding, OBJ_Player.GREEN) and array_contains(Holding, OBJ_Player.TempestiumSulfide) {
+			Holding = [OBJ_Player.Relish]
 		}
 		else {
 			Holding = [OBJ_Player.MYSTERY_PRODUCT]
@@ -151,6 +163,15 @@ if cookingTimer <= 0 {
 		}
 		else if array_contains(Holding, OBJ_Player.Synthestine) and array_contains(Holding, OBJ_Player.Zyloxine) and array_contains(Holding, OBJ_Player.Frothium) {
 			Holding = [OBJ_Player.Pizza]
+		}
+		else if array_contains(Holding, OBJ_Player.Synthestine) and array_contains(Holding, OBJ_Player.YELLOW) and array_contains(Holding, OBJ_Player.Quasarine) {
+			Holding = [OBJ_Player.Fries]
+		}
+		else if array_contains(Holding, OBJ_Player.Xylochloride) and array_contains(Holding, OBJ_Player.CeleritePhosphate) and array_contains(Holding, OBJ_Player.YELLOW) {
+			Holding = [OBJ_Player.OnionRings]
+		}
+		else if array_contains(Holding, OBJ_Player.Mustard) and array_contains(Holding, OBJ_Player.Ketchup) and array_contains(Holding, OBJ_Player.Relish) {
+			Holding = [OBJ_Player.SpecialSauce]
 		}
 		else if array_contains(Holding, OBJ_Player.RED) and array_contains(Holding, OBJ_Player.Zyloxine) and array_contains(Holding, OBJ_Player.Luminexate) {
 			Holding = [OBJ_Player.ChiliP]
@@ -275,6 +296,27 @@ for (var i = 0; i < (array_length(Holding)); i++) {
 	}
 	if Holding[i] == OBJ_Player.Pizza {
 		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Pizza)
+	}
+	if Holding[i] == OBJ_Player.Ketchup {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Ketchup)
+	}
+	if Holding[i] == OBJ_Player.Mustard {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Mustard)
+	}
+	if Holding[i] == OBJ_Player.Relish {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Relish)
+	}
+	if Holding[i] == OBJ_Player.SpecialSauce {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Special_Sauce)
+	}
+	if Holding[i] == OBJ_Player.Cola {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Cola)
+	}
+	if Holding[i] == OBJ_Player.Fries {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Fries)
+	}
+	if Holding[i] == OBJ_Player.OnionRings {
+		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Fried_Onions)
 	}
 	if Holding[i] == OBJ_Player.RUINED_PRODUCT {
 		instance_create_layer(x, y - 2*i, "Instances", OBJ_Display_Ruined_Product)

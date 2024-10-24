@@ -6,6 +6,8 @@ MoveSpeed = 2
 Stunned = false 
 StunnedTimer = 200
 
+
+//DICTIONARY
 None = "None"
 
 RED = "Redonitrate"
@@ -17,7 +19,7 @@ ORANGE = "Orangetide"
 GREEN = "Greenolium"
 
 HEISENBURGER = "Hamburger"
-BlueCandy = "Candy"
+BlueCandy = "Blue Candy"
 ChiliP = "Chili"
 BlueSkySoda = "Blue Soda"
 VeggieBacon = "Bacon"
@@ -26,13 +28,13 @@ Burrito = "Burrito"
 Taco = "Taco"
 HotDog = "Hot Dog"
 Pizza = "Pizza"
-//TO DO
-Fries = "Fries"
-Cola = "Cola"
-OnionRings = "Onion Rings"
+Ketchup = "Ketchup"
+Mustard = "Mustard"
+Relish = "Relish"
 SpecialSauce = "Special Sauce"
-
-
+Cola = "Cola"
+Fries = "Fries"
+OnionRings = "Fried Onions"
 
 Synthestine = "Synthestine"
 
